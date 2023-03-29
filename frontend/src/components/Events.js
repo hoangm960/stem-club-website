@@ -9,7 +9,7 @@ import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
 TimeAgo.addDefaultLocale(en)
 
-const Card = ({ title, image, date, slug, id }) => {
+const Card = ({ title, image, date, slug}) => {
   const imgUrl = image.data
     ? image.data.attributes.url
     : dummy
@@ -65,7 +65,6 @@ const Events = () => {
                 date={timeAgo.format(Date.now() - (Date.now() - Date.parse(attributes.publishedAt)),
                   'round')}
                 slug={attributes.slug}
-                id={attributes.id}
               />
             </div>
           )}
