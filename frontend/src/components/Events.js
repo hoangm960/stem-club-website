@@ -10,8 +10,8 @@ import en from 'javascript-time-ago/locale/en.json'
 TimeAgo.addDefaultLocale(en)
 
 const Card = ({ title, image, date, slug}) => {
-  const imgUrl = image.data
-    ? image.data.attributes.url
+  const imgUrl = image
+    ? image.url
     : dummy
 
   return (
