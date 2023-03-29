@@ -106,11 +106,9 @@ const Person = ({ avatar, title, profile, index, loading=false }) => {
 const About = () => {
   const [members, setMembers] = useState([])
   useEffect(() => {
-    // console.log('before fetch:', members === []);
     const fetchMembers = async () => {
-      const res = await axios.get(`${BACKEND_URL}/api/members?populate=*`)
-      setMembers(res.data.data)
-      // console.log('after fetch:', members === []);
+      const res = await axios.get(`${BACKEND_URL}/members.json`)
+      setMembers(res.data);
     }
 
     fetchMembers()
@@ -144,10 +142,10 @@ const About = () => {
   return (
     <div className='container'>
       <SectionHeader text="Our Team" />
-      <People role='leader' title='Leaders' />
+      {/* <People role='leader' title='Leaders' />
       <People role='member' title='Members' />
-      {/* <SectionHeader text="Our Partners" /> */}
-      <People role='advisor' title='Advisors' />
+      <SectionHeader text="Our Partners" />
+      <People role='advisor' title='Advisors' /> */}
     </div>
   )
 }
