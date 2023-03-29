@@ -61,10 +61,11 @@ const Person = ({ avatar, title, profile, index, loading = false }) => {
 
   // TODO: show bio via popup
 
-  const avatarUrl = avatar.data
-    ? avatar.data.attributes.url
+  const avatarUrl = avatar
+    ? avatar.url
     : logo
-
+  console.log(avatar);
+    
   const Avatar = () =>
     <div className='avatar-square-container'>
       <img
