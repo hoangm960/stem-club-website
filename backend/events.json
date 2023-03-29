@@ -6,7 +6,20 @@
     "createdAt": "2022-06-18T16:38:04.322Z",
     "updatedAt": "2022-09-10T02:53:00.453Z",
     "publishedAt": "2022-06-18T16:39:09.948Z",
-    "featureImage": 27,
+    "featureImage": {
+        "id": 27,
+        "name": "278018799_162634316195015_9027802710567440208_n.jpg",
+        "alternativeText": "Fulbright Trivia Night 2022 Event ",
+        "caption": "Fulbright Trivia Night 2022 ",
+        "hash": "278018799_162634316195015_9027802710567440208_n_81c2b4cbdf",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "url": "https://res.cloudinary.com/dq5xtekcp/image/upload/v1655577663/278018799_162634316195015_9027802710567440208_n_81c2b4cbdf.jpg",
+        "createdAt": "2022-06-18T18:41:05.110Z",
+        "updatedAt": "2022-07-11T01:39:53.931Z",
+        "createdBy": null,
+        "updatedBy": null
+    },
     "createdBy": null,
     "updatedBy": null
 }]
